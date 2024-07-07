@@ -1,0 +1,29 @@
+.QuoteItPeople{
+    width: 100%;
+    height: 50vh;
+}
+
+.QuoteItPeople{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.QuoteItP{
+    width: 100%;
+    text-align: center;
+    font-family: "Baskervville SC", serif;
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 768px){
+    .QuoteItPeople{
+        height: 50vh;
+    }
+
+    .QuoteItP{
+        font-size: 1.8rem;
+    }
+}

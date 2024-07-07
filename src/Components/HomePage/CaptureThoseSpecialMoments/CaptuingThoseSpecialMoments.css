@@ -1,0 +1,85 @@
+.CaptuingThoseSpecialMoments{
+    height: 110vh;
+    width: 100%;
+    position: relative;
+    background-color: #f5f0ec;
+}
+
+.CaptuingThoseSpecialMomentsHead{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: #654321;
+    font-family: "Baskervville SC", serif;
+    font-size: 4rem;
+    /* width: 30%; */
+}
+
+.CaptuingThoseSpecialMomentsFlex{
+    height: 110vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.CaptuingThoseSpecialMomentsImg{
+    flex: 1.5;
+    height: 110vh;
+    width: 100%;
+}
+
+.CaptuingThoseSpecialMomentsImgImg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.CaptuingThoseSpecialMomentsContent{
+    flex: 2;
+}
+
+.CaptuingThoseSpecialMomentsContentP{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    text-align: justify;
+    font-size: 1.4rem;
+    font-family: "Baskervville SC", serif;
+}
+
+
+@media screen and (max-width: 768px){
+    .CaptuingThoseSpecialMoments{
+        height: 120vh;
+    }
+
+    .CaptuingThoseSpecialMomentsHead{
+        font-size: 3rem;
+    }
+
+    .CaptuingThoseSpecialMomentsContentP{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .CaptuingThoseSpecialMoments{
+        height: 130vh;
+    }
+
+    .CaptuingThoseSpecialMomentsHead{
+        font-size: 2rem;
+        top: 5%;
+        width: 100%;
+        text-align: center;
+        /* left: 60%; */
+    }
+
+    .CaptuingThoseSpecialMomentsContentP{
+        font-size: 0.8rem;
+    }
+}

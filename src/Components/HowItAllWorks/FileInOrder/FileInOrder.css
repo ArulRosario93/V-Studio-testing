@@ -1,0 +1,37 @@
+.FileInOrder{
+    height: 100%;
+    flex: 1;
+}
+
+.FileInOrderNum{
+    color: #654321;
+    /* font-size: 2rem; */
+}
+
+.FileInOrderText{
+    color: #654321;
+    font-size: 1.5rem;
+}
+
+.FileInOrderStraight{
+    width: 90%;
+    height: 2px;
+    margin: 30px auto;
+    background-color: #654321;
+}
+
+.FileInOrderRow{
+    display: flex;
+    flex-direction: row;
+    font-family: "Baskervville SC", serif;
+    gap: 10px;
+    width: 80%;
+    font-size: 2rem;
+    margin: auto;
+}
+
+@media screen and (max-width: 768px){
+    .FileInOrderRow{
+        font-size: 1rem;
+    }
+}

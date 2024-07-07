@@ -1,0 +1,75 @@
+.ALittleAboutMe{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: row;
+    background-color: #e9e0d7;
+}
+
+.ALittleAboutMeHead{
+    position: absolute;
+    width: 50%;
+    margin: auto;
+    top: 10%;
+    font-size: 4rem;
+    font-weight: 300;
+    font-family: "Baskervville SC", serif;
+    color: #654321;
+    /* text-align: left; */
+}
+
+.ALittleAbouMeContent{
+    flex: 1;
+}
+
+.ALittleAbouMeContentP{
+    width: 80%;
+    text-align: justify;
+    /* height: 100%; */
+    margin: auto;
+    font-size: 2rem;
+    font-family: "Baskervville SC", serif;
+}
+.ALittleAbouMeImg{
+    flex: 1;
+}
+
+.ALittleAbouMeImgImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 768px){
+    .ALittleAboutMe{
+        height: 80vh;
+        padding-bottom: 30px;
+        flex-direction: column-reverse;
+    }
+
+    .ALittleAboutMeHead{
+        width: 80%;
+        font-size: 2rem;
+    }
+
+    .ALittleAbouMeContentP{
+        font-size: .8rem;
+    }
+
+    .ALittleAbouMeContent{
+        flex: 0;
+        
+    }
+
+
+    .ALittleAbouMeImg{
+        flex: 0;
+        width: 80%;
+        margin: 20px auto;
+        height: 200px;
+    }
+}

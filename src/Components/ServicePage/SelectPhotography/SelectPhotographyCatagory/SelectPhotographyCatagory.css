@@ -1,0 +1,53 @@
+
+.SelectPhotographyCatagoryFlexItem{
+    width: 100%;
+    margin-top: 20px;
+    height: 220px;
+    position: relative;
+}
+
+.SelectPhotographyCatagoryFlexItemImg{
+    width: 100%;
+    top: 0;
+    position: absolute;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.SelectPhotographyCatagoryFlexItemHead{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Baskervville SC", serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.158);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.SelectPhotographyCatagoryFlexItemHeadPara{
+    font-size: 1.3rem;
+}
+
+.SelectPhotographyCatagoryFlexItemHead:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 660px){
+    .SelectPhotographyCatagoryFlexItemHead{
+        font-size: 1.5rem;
+    }
+
+    .SelectPhotographyCatagoryFlexItem{
+        height: 150px;
+    }
+
+}

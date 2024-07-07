@@ -1,0 +1,20 @@
+.Arrow{
+    position: absolute;
+    top: -10px;
+    z-index: 100;
+    background-color: aqua;
+    width: max-content;
+    margin: 0px auto;
+    width: 105px;
+}
+
+.ArrowP{
+    /* transform: ; */
+    /* text-align: right; */
+    color: #654321;
+    font-size: 6rem;
+}
+
+.ArrowP > p{
+    transform: rotate(90deg);
+}

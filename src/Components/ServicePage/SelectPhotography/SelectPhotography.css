@@ -1,0 +1,213 @@
+.SelectPhotography{
+    width: 100%;
+    height: 100vh;
+}
+.SelectPhotographyHead{
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Baskervville SC", serif;
+}
+.SelectPhotographyCatagoryFlex{
+    width: 80%;
+    margin: 0px auto;
+    /* background-color: black; */
+    height: 70vh;
+    overflow:scroll;
+    overflow-x: hidden;
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    padding: 20px 100px;
+}
+
+.SelectPhotographyDialog{
+    overflow: hidden;
+    /* height: 100vh; */
+    width: 100%;
+    /* margin: 0px auto; */
+}
+
+.MuiDialog-paperWidthSm{
+    max-width: 700px;
+}
+
+
+.SelectPhotographyDialogFlex{
+    width: 100%;
+    padding-bottom: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.SelectPhotographyDialogFlexItem{
+    height: 300px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+.SelectPhotographyDialogFlexItemNotesHead{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: black;
+}
+
+.InfoFlex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.InfoFlexImg{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+.InfoFlexImgImg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* border-radius: 20px; */
+
+}
+
+.SelectPhotographyDialogFlexItemNotesList{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    padding: 5px 0px;
+    font-weight: 400;
+    list-style: none;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    color: black;
+}
+
+.SelectPhotographyDialogFlexItemPara{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.SelectPhotographyDialogFlexItemHead{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: "Baskervville SC", serif;
+    /* background-color: aqua; */
+}
+.SelectPhotographyDialogFlexItemImg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+
+@media screen and (max-width: 660px){
+    .SelectPhotographyCatagoryFlex{
+        padding: 20px 0px;
+    }
+    .SelectPhotographyDialogFlexItemNotesList{
+        font-size: 1rem;
+    }
+}
+
+
+.SelectPhotographyDialogFlex::-webkit-scrollbar {
+    width: 4px;
+    padding: 0px 2px;
+    /* height: 20px; */
+    backdrop-filter: blur(60px);
+    background-color: rgb(255, 255, 255);
+     /* Change this to your desired thumb color */
+  }
+
+  /* Define the custom scrollbar thumb */
+.SelectPhotographyDialogFlex::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: rgb(226, 215, 190); /* Change this to your desired thumb color */
+    border-radius: 60px;
+  }
+  
+  /* Define the custom scrollbar track when hovered */
+.SelectPhotographyDialogFlex::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(209, 195, 162); /* Change this to your desired thumb color when hovered */
+  }
+
+.SelectPhotographyCatagoryFlex::-webkit-scrollbar {
+    width: 4px;
+    padding: 0px 2px;
+    /* height: 20px; */
+    backdrop-filter: blur(60px);
+    background-color: rgb(255, 255, 255);
+     /* Change this to your desired thumb color */
+  }
+  
+  /* Define the custom scrollbar thumb */
+.SelectPhotographyCatagoryFlex::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: rgb(226, 215, 190); /* Change this to your desired thumb color */
+    border-radius: 60px;
+  }
+  
+  /* Define the custom scrollbar track when hovered */
+.SelectPhotographyCatagoryFlex::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(209, 195, 162); /* Change this to your desired thumb color when hovered */
+  }
+
+@media screen and (max-width: 660px){
+    .SelectPhotographyCatagoryFlex::-webkit-scrollbar {
+        width: 4px;
+        padding: 0px 2px;
+        /* height: 20px; */
+        backdrop-filter: blur(60px);
+        background-color: rgb(255, 255, 255);
+            /* Change this to your desired thumb color */
+        }
+        
+        /* Define the custom scrollbar thumb */
+    .SelectPhotographyCatagoryFlex::-webkit-scrollbar-thumb {
+        border-radius: 20px;
+        background-color: rgb(226, 215, 190); /* Change this to your desired thumb color */
+        border-radius: 60px;
+        }
+        
+        /* Define the custom scrollbar track when hovered */
+    .SelectPhotographyCatagoryFlex::-webkit-scrollbar-thumb:hover {
+        background-color: rgb(209, 195, 162); /* Change this to your desired thumb color when hovered */
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    .SelectPhotographyDialogFlex {
+        padding: 10px;
+        flex-direction: column;
+    }
+    .InfoFlexImg{
+        height: 30px;
+        margin-right: 5px;
+        width: 30px;
+        /* object-fit: cover;
+        border-radius: 15px; */
+    } 
+    .SelectPhotographyDialogFlexItemPara{
+        font-size: 1.3rem;
+    }
+}

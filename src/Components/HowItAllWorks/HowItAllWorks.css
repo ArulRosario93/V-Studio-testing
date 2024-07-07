@@ -1,0 +1,76 @@
+.HowItAllWorks{
+    height: 100vh;
+    width: 90%;    
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.HowItAllWorksContain{
+    width: 100%;
+    background-color: #f5f0ec;
+    height: 100%;
+}
+
+.HowItAllWorksImg{
+    height: 70%;
+    width: 100%;
+    /* flex: 1; */
+}
+
+.HowItAllWorksImgImg{
+    background-color: gainsboro;
+    width: 90%;
+    /* margin: auto; */
+    object-fit: cover;
+    height: 100%;
+}
+
+.HowItAllWorksContent{
+    display: flex;
+    /* flex: 1; */
+    flex-direction: column;
+}
+
+.HowItAllWorksHead{
+    position: absolute;
+    z-index: 10;
+    font-family: "Baskervville SC", serif;
+    top: 10%;
+    font-weight: 300;
+    width: 50%;
+    font-size: 4rem;
+    color: #654321;
+}
+
+@media screen and (max-width: 768px){
+    .HowItAllWorks{
+        height: auto;
+        padding-bottom: 30px;
+        flex-direction: column;
+    }
+
+    .HowItAllWorksHead{
+        width: 100%;
+        /* top: 5%; */
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .HowItAllWorksContent{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .HowItAllWorksImg{
+        height: 50%;
+        width: 100%;
+    }
+    .HowItAllWorksImgImg{
+        width: 100%;
+        height: 100%;
+    }
+}

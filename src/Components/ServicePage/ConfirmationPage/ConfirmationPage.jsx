@@ -1,17 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./ConfirmationPage.css";
 import Dialog from '@material-ui/core/Dialog';
 
-const ConfirmationPage = ({ date, photography, details }) => {
+const ConfirmationPage = ({ date, photography, details, setSelectedAddons }) => {
 
     const [addOns, setAddOns] = React.useState([]);
     const [open, setOpen] = React.useState(false);
     const [ads, setAds] = React.useState(true);
 
     const handleAddOn = (item, price, index) => {
+        setSelectedAddons([...addOns, { item: item, price: price, index: index }]);
         setAddOns([...addOns, { item: item, price: price, index: index }]);
         setAds(false);
     }
+
 
     const addOnsAds = [
         {
@@ -48,7 +50,9 @@ const ConfirmationPage = ({ date, photography, details }) => {
     const grandTotal = photography.price + (photography.price * 0.18); 
 
     // console.log(photography, details, date);
-    console.log(grandTotal);
+    useEffect(() => {
+        setSelectedAddons(addOns);
+    }, [addOns]);
 
     return (
         <div className="ConfirmationPage">

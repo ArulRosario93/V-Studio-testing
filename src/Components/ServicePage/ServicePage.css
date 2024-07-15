@@ -17,13 +17,52 @@
     /* padding: 20px 40px; */
 }
 
-.ServicePageBtnFlex{
+.TermsAndConditions{
+    width: 100%;
+    height: 100%;
+}
 
+.TermsAndConditionsHead{
+    font-family: "Baskervville SC", serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px;
+}
+
+.TermsAndConditionsRowImg{
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.TermsAndConditionsRow{
+    font-family: "Baskervville SC", serif;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    padding: 20px 10px;
+    /* border-bottom: 1px solid #654321; */
+}
+
+.TermsAndConditionsRowP{
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    flex: 1;
+    margin: 0px;
+    padding: 5px;
+}
+
+.TermsAndConditionsRowImgImg{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.ServicePageBtnFlex{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px 100px;
-
 }
 
 .ServicePageBG{
@@ -35,9 +74,7 @@
     z-index: -1;
     opacity: 0;
     background-image: url("../../assets//LoversLane.jpg");
-
 }
-
 
 .ServicePageDialog{
     width: 100%;
@@ -48,6 +85,9 @@
 
 .ServicePageDialogCheckIt{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
     margin: 0px;
     text-align: center;
 }
@@ -93,6 +133,10 @@
     .ServicePageDialogBtns{
         padding: 20px 0px;
         gap: 6px;
+    }
+
+    .TermsAndConditionsHead{
+        font-size: 1.5rem;
     }
 
 }

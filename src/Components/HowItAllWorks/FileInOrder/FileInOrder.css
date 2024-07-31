@@ -4,12 +4,15 @@
 }
 
 .FileInOrderNum{
-    color: #654321;
+    /* color: #654321; */
+    color: white;
+    font-weight: 600;
     /* font-size: 2rem; */
 }
 
 .FileInOrderText{
-    color: #654321;
+    /* color: #654321; */
+    color: white;
     font-size: 1.5rem;
 }
 
@@ -17,7 +20,8 @@
     width: 90%;
     height: 2px;
     margin: 30px auto;
-    background-color: #654321;
+    /* background-color: #654321; */
+    background-color: black;
 }
 
 .FileInOrderRow{

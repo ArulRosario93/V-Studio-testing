@@ -1,7 +1,17 @@
 .LoverLane{
     height: 110vh;
     width: 100%;
+    user-select: none;
     position: relative;
+}
+
+.LoverLaneOverlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 110vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);   
 }
 
 .LoverLaneImg{
@@ -23,6 +33,7 @@
 .LoverLaneTitleHead{
     font-weight: 400;
     color: #fffde7;
+    
     font-size: 5rem;
     font-family: "Baskervville SC", serif;
 }

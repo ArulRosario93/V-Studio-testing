@@ -2,7 +2,8 @@
     height: 110vh;
     width: 100%;
     position: relative;
-    background-color: #f5f0ec;
+    /* background-color: #f5f0ec; */
+    background-color: rgb(12, 12, 12);
 }
 
 .CaptuingThoseSpecialMomentsHead{
@@ -11,7 +12,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: left;
-    color: #654321;
+    /* color: #654321; */
+    color: white;
     font-family: "Baskervville SC", serif;
     font-size: 4rem;
     /* width: 30%; */
@@ -46,6 +48,7 @@
     width: 80%;
     height: 80%;
     margin: auto;
+    color: gainsboro;
     text-align: justify;
     font-size: 1.4rem;
     font-family: "Baskervville SC", serif;
@@ -68,18 +71,19 @@
 
 @media screen and (max-width: 480px){
     .CaptuingThoseSpecialMoments{
-        height: 130vh;
+        height: auto;
+        padding: 0px;  
     }
 
     .CaptuingThoseSpecialMomentsHead{
         font-size: 2rem;
-        top: 5%;
+        top: 7%;
         width: 100%;
         text-align: center;
         /* left: 60%; */
     }
 
     .CaptuingThoseSpecialMomentsContentP{
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 }

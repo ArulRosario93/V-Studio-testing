@@ -1,37 +1,39 @@
 .HowItAllWorks{
-    height: 100vh;
-    width: 90%;    
+    height: 100%;
+    width: 100%;    
     margin: auto;
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: black;
+    color: white;
 }
 
 .HowItAllWorksContain{
     width: 100%;
-    background-color: #f5f0ec;
-    height: 100%;
+    background-color: black;
+    /* background-color: #f5f0ec; */
+    height: 110vh;
 }
 
 .HowItAllWorksImg{
     height: 70%;
     width: 100%;
-    /* flex: 1; */
+    flex: 1;
 }
 
 .HowItAllWorksImgImg{
-    background-color: gainsboro;
-    width: 90%;
-    /* margin: auto; */
-    object-fit: cover;
+    background-color: black;
+    width: 80%;
+    object-fit: contain;
     height: 100%;
 }
 
 .HowItAllWorksContent{
     display: flex;
-    /* flex: 1; */
+    flex: 1;
     flex-direction: column;
 }
 
@@ -43,19 +45,22 @@
     font-weight: 300;
     width: 50%;
     font-size: 4rem;
-    color: #654321;
+    /* color: #654321; */
+    color: white;
 }
 
 @media screen and (max-width: 768px){
     .HowItAllWorks{
-        height: auto;
-        padding-bottom: 30px;
+        height: 100%;
+        justify-content: end;
+        align-items: end;
         flex-direction: column;
+        gap: 10px;
     }
 
     .HowItAllWorksHead{
         width: 100%;
-        /* top: 5%; */
+        top: 5%;
         text-align: center;
         font-size: 2rem;
     }
@@ -64,13 +69,31 @@
         width: 100%;
         margin-top: 20px;
     }
-
     .HowItAllWorksImg{
-        height: 50%;
+        flex: 1;
+        top: 10%;
+        position: absolute;
+    }
+    .HowItAllWorksImg{
+        height: 80%;
         width: 100%;
+    }
+    .HowItAllWorksContent{
+        z-index: 10;
     }
     .HowItAllWorksImgImg{
         width: 100%;
         height: 100%;
     }
+    
+.HowItAllWorksContentContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
+    width: 80%;
+    font-size: 2rem;
+    font-family: "Baskervville SC", serif;
+    color: white;
+}
 }

@@ -6,7 +6,9 @@
     align-items: center;
     position: relative;
     flex-direction: row;
-    background-color: #e9e0d7;
+    /* background-color: #e9e0d7; */
+    user-select: none;
+    background-color: white;
 }
 
 .ALittleAboutMeHead{
@@ -17,7 +19,8 @@
     font-size: 4rem;
     font-weight: 300;
     font-family: "Baskervville SC", serif;
-    color: #654321;
+    /* color: #654321; */
+    color: black;
     /* text-align: left; */
 }
 

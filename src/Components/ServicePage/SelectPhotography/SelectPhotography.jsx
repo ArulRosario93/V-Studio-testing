@@ -5,7 +5,7 @@ import wowImage from "../../../assets/LoversLane.jpg";
 import SelectPhotographyCatagory from "./SelectPhotographyCatagory/SelectPhotographyCatagory";
 import { keys } from "@material-ui/core/styles/createBreakpoints";
 
-const SelectPhotography = ({ setPhotography, photography }) => {
+const SelectPhotography = ({ setPhotography, photography, myParam }) => {
 
     const [dialog, setDialog] = useState(false);
     const [selectedIndex, setSelectedIndex] = useState(null);
@@ -17,7 +17,7 @@ const SelectPhotography = ({ setPhotography, photography }) => {
             name: "Baby Shoot",
             subName: "Basic",
             image: "https://images.squarespace-cdn.com/content/v1/58c61df220099e3e84dc9578/1664675452832-CL3OFQQZKV0QFVK6PFCO/beerwahfamilyphotoshoot-2.jpg",
-            price: 50000,
+            price: myParam == 'Coimbatore'? 75000 : 50000,
             notes: [
                 "Traditional Videography",
                 "Traditional Photography",
@@ -34,7 +34,7 @@ const SelectPhotography = ({ setPhotography, photography }) => {
             subName: "",
             color: "",
             image: "https://5.imimg.com/data5/QI/DQ/MY-40449810/wedding-lighting-services.jpeg",
-            price: 35000,
+            price: myParam == 'Coimbatore'? 55000 : 35000,
             notes: [
                 "Traditional Videography",
                 "Traditional Photography",
@@ -49,7 +49,7 @@ const SelectPhotography = ({ setPhotography, photography }) => {
             subName: "",
             color: "",
             image: "https://www.weddingbee.com/wp-content/uploads/2020/08/lights-603660.jpg",
-            price: 48000,
+            price: myParam == 'Coimbatore'? 70000 : 48000,
             notes: [
                 "Traditional Videography",
                 "Traditional Photography",
@@ -64,7 +64,7 @@ const SelectPhotography = ({ setPhotography, photography }) => {
             subName: "",
             color: "",
             image: "https://www.weddingsutra.com/images/Vendor_Images/Wedding-decor/designs-by-sakshi-jerath/designs-by-sakshi-jerath-08.jpg",
-            price: 55000,
+            price: myParam == 'Coimbatore'? 80000 : 55000,
             notes: [
                 "Traditional Videography",
                 "Traditional Photography",
@@ -80,7 +80,7 @@ const SelectPhotography = ({ setPhotography, photography }) => {
             subName: "",
             color: "",
             image: "https://www.weddingsutra.com/images/Vendor_Images/Wedding-decor/designs-by-sakshi-jerath/designs-by-sakshi-jerath-07.jpg",
-            price: 65000,
+            price: myParam == 'Coimbatore'? 90000 : 65000,
             notes: [
                 "Traditional Videography",
                 "Traditional Photography",
@@ -97,7 +97,7 @@ const SelectPhotography = ({ setPhotography, photography }) => {
             subName: "",
             color: "",
             image: "https://brighteventproductions.com/wp-content/uploads/2015/06/Bright-Event-Productions-Boho-Nashville-Wedding-Love-is-a-Big-Deal-7.jpg",
-            price: 75000,
+            price: myParam == 'Coimbatore'? 100000 :  75000,
             notes: [
                 "Traditional Videography",
                 "Traditional Photography",
@@ -115,7 +115,7 @@ const SelectPhotography = ({ setPhotography, photography }) => {
             subName: "",
             color: "",
             image: "https://www.weddingsutra.com/images/Vendor_Images/Wedding-decor/designs-by-sakshi-jerath/designs-by-sakshi-jerath-12.jpg",
-            price: 85000,
+            price: myParam == 'Coimbatore'? 110000 :  85000,
             notes: [
                 "Traditional Videography",
                 "Traditional Photography",
@@ -133,7 +133,7 @@ const SelectPhotography = ({ setPhotography, photography }) => {
             subName: "",
             color: "",
             image: "https://i.pinimg.com/originals/03/26/67/0326677409641e7894398783ef538311.jpg",
-            price: 96000,
+            price: myParam == 'Coimbatore'? 120000 : 96000,
             notes: [
                 "Traditional Videography",
                 "Traditional Photography",
@@ -152,7 +152,7 @@ const SelectPhotography = ({ setPhotography, photography }) => {
             subName: "",
             color: "",
             image: "https://m.media-amazon.com/images/M/MV5BYWY4OTgzOWYtNjJlMi00MTJjLTgyNGEtMzZiMDc3OTkzOGFjXkEyXkFqcGdeQXVyOTc5MDI5NjE@._V1_.jpg",
-            price: 100000,
+            price: myParam == 'Coimbatore'? 130000 : 100000,
             notes: [
                 "Traditional Videography",
                 "Traditional Photography",
@@ -172,7 +172,7 @@ const SelectPhotography = ({ setPhotography, photography }) => {
             subName: "",
             color: "",
             image: "https://receptionflipflops.com/cdn/shop/articles/Outdoor_night_wedding_procession.jpg?v=1672263783&width=1500",
-            price: 115000,
+            price: myParam == 'Coimbatore'? 140000 : 115000,
             notes: [
                 "Traditional Videography",
                 "Traditional Photography",
@@ -193,7 +193,7 @@ const SelectPhotography = ({ setPhotography, photography }) => {
             subName: "",
             color: "",
             image: wowImage,
-            price: 125000,
+            price: myParam == 'Coimbatore'? 150000 : 125000,
             notes: [
                 "Traditional Videography",
                 "Traditional Photography",

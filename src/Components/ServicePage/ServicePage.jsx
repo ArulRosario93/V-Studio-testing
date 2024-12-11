@@ -32,6 +32,14 @@ const ServicePage = () => {
         address: ""
     });
 
+    // Find The given parameter from the URL
+    const urlParams = new URLSearchParams(document.location.search);
+    const myParam = urlParams.get('location');    
+
+
+    console.log(urlParams);
+    console.log(myParam);
+
     const nextPage = () => {
         if(page == 0) {
             setPage(1);
@@ -207,7 +215,7 @@ const ServicePage = () => {
             </Dialog>
             <div className="ServicePageBG"></div>
             {
-                page == 0?<PickDate setDate={setDate} date={date} />: page == 1? <SelectPhotography setPhotography={setPhotography} photography={photography} /> : page == 2? <Forms setDetails={setDetails}/> : page==3? <ConfirmationPage setSelectedAddons={setSelectedAddons} date={date} details={details} photography={photography} /> :<div></div>
+                page == 0?<PickDate setDate={setDate} date={date} />: page == 1? <SelectPhotography myParam={myParam} setPhotography={setPhotography} photography={photography} /> : page == 2? <Forms setDetails={setDetails}/> : page==3? <ConfirmationPage setSelectedAddons={setSelectedAddons} date={date} details={details} photography={photography} /> :<div></div>
             }
             
             <div className="ServicePageBtn">

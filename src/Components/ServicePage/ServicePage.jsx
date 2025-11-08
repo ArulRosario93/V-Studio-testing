@@ -108,7 +108,10 @@ const ServicePage = () => {
                 import.meta.env.VITE_API_PUBLIC_KEY
             );
     
-            console.log('Emails sent successfully!');
+            alert('Successfully Slot Booked <3');
+            window.location('/');
+            window.location.reload();
+
         } catch (error) {
             console.error('Failed to send emails:', error);
             throw error;  // Rethrow the error to handle it in the calling function

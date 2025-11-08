@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import "./SelectPhotography.css";
-import Dialog from '@material-ui/core/Dialog';
+import Dialog from '@mui/material/Dialog';
 import wowImage from "../../../assets/LoversLane.jpg";
 import SelectPhotographyCatagory from "./SelectPhotographyCatagory/SelectPhotographyCatagory";
-import { keys } from "@material-ui/core/styles/createBreakpoints";
 
 const SelectPhotography = ({ setPhotography, photography, myParam }) => {
 

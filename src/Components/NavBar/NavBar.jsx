@@ -1,5 +1,5 @@
 import React from "react";
-import { Dialog, DialogContent } from "@material-ui/core";
+import { Dialog, DialogContent } from "@mui/material";
 import "./Navbar.css";
 import { Link, Navigate } from "react-router-dom";
 

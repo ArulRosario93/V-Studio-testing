@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./ConfirmationPage.css";
-import Dialog from '@material-ui/core/Dialog';
+import Dialog from '@mui/material/Dialog';
 
 const ConfirmationPage = ({ date, photography, details, setSelectedAddons }) => {
 

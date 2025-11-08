@@ -2,7 +2,7 @@ import React from "react";
 import "./ServicePage.css";
 import PickDate from "./PickDate/PickDate";
 import SlotBookingBtn from "./Buttons/SlotBookingsBtn";
-import Dialog from '@material-ui/core/Dialog';
+import Dialog from '@mui/material/Dialog';
 import SelectPhotography from "./SelectPhotography/SelectPhotography";
 import Forms from "./Forms/Forms";
 import ConfirmationPage from "./ConfirmationPage/ConfirmationPage";
